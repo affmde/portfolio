@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1{
+    font-family: 'Spartan', sans-serif;
+}
+
+h2{
+    font-family: 'Spartan', sans-serif;
+}
+
+p{
+    font-family: 'Abel', sans-serif;
+}
+
+li{
+    font-family: 'Spartan', sans-serif;
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/*General classes*/
+.hidden{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Header section*/
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+}
+
+nav li{
+    padding: 35px 25px;
+}
+
+nav li:hover{
+    background-color: orange;
+    font-weight: bold;
+}
+
+#social-media:hover .social-media-list{
+    display:flex;
+    position: absolute;
+    width: 100%;
+}
+
+.social-media-list li{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+.social-media-list li:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*banner*/
+
+
+.banner{
+    background-image: url('../media/images/kyle-sung-oQuP_XBjOMY-unsplash-edited.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height: 800px;
+    position: relative;
+}
+
+.text-info{
+    position:absolute;
+    top: 35%;
+    left: 10%;
+}
+
+#portfolio{
+    text-align: center;
+    font-size: 1.5rem;
+    color: cyan;
+}
+
+#name{
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+#name:hover{
+    transform: scale(1.1);
+    transition: all linear 500ms;
+}
+
+#web-designer{
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+#web-designer:hover{
+    transform: scale(1.1);
+    transition: all linear 500ms;
+}
+#web-dev{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+#web-dev:hover{
+    transform: scale(1.1);
+    transition: all linear 500ms;
+}
+
+.check-more{
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    text-align: center;
+}
+
+.check-more p{
+    padding: 10px 5px;
+    margin: 5px 0;
+}
+
+.check-more:hover{
+    bottom: 100px;
+    transition: all linear 600ms;
+}
+
+/*About Me section*/
+
+
+.container{
+    margin:100px;
+    display: flex;
+    align-items: center;
+}
+
+.left-side{
+    width: 40%;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side{
+    width: 50%;
+    line-height: 2rem;
+}
+
+.about-me h2{
+    margin: 20px auto;
+}
+
+.about-me p{
+    font-size: 1.2rem;
+}
+
+#andre-miranda-pic{
+    height: 300px;
+    border-radius: 50%;
+}
+
+.ul-description li{
+    list-style-type: square;
+    margin-left: 40px;
+}
+
+
+/*projects section*/
+
+.projects{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/images/casey-horner-9vf1uj6i6Ww-unsplash.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/images/casey-horner-9vf1uj6i6Ww-unsplash.jpg'); 
+    background-position: center;
+    color: white;
+}
+
+.projects-container{
+    margin: 20px;
+
+}
+
+#my-projects{
+    text-align: center;
+    padding: 20px;
+}
+
+.project-boxes-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+    background: rgba(128, 127, 127, 0.05);
+}
+
+.box{
+    width: 30%;
+    text-align: center;
+    margin: 10px 15px;
+    font-size: 1.5rem;
+}
+
+.projects-container img{
+    width: 100%;
+    margin-top: 5px;
+}
