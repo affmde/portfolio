@@ -38,6 +38,11 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+.mobile{
+    display: none;
+}
+
 /*Header section*/
 
 
@@ -45,6 +50,12 @@ nav{
     display: flex;
     justify-content: space-evenly;
     float: right;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav li{
@@ -71,6 +82,18 @@ nav li:hover{
 }
 
 
+
+@media only screen and (max-width: 800px){
+    nav li{
+        padding: 35px 15px;
+        font-size: 0.6rem;
+    }
+
+    .social-media-list li{
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+}
 
 /*banner*/
 
@@ -141,6 +164,39 @@ nav li:hover{
     transition: all linear 600ms;
 }
 
+@media only screen and (max-width: 800px){
+    .banner{
+        height: 700px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/images/kyle-sung-oQuP_XBjOMY-unsplash-edited.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../media/images/kyle-sung-oQuP_XBjOMY-unsplash-edited.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .text-info{
+        position:absolute;
+        top: 25%;
+        left: 10%;
+    }
+
+    #name{
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    #web-designer{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    #web-dev{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+}
+
+
 /*quote secton*/
 
 .quote{
@@ -160,6 +216,16 @@ nav li:hover{
     grid-area: 4/6/4/7;
 }
 
+@media only screen and (max-width: 800px){
+    .quote{
+        height: auto;
+        font-size: 1rem;
+        padding: 30px;
+    }
+    #quoter{
+        grid-area: 5/6/6/7;
+    }
+}
 
 /*About Me section*/
 
@@ -199,6 +265,17 @@ nav li:hover{
 .ul-description li{
     list-style-type: square;
     margin-left: 40px;
+}
+
+@media only screen and (max-width: 800px){
+    .about-me .container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .right-side{
+        width: 100%;
+    }
 }
 
 
@@ -247,6 +324,17 @@ nav li:hover{
     margin-top: 5px;
 }
 
+@media only screen and (max-width: 800px){
+    .project-boxes-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box{
+        width: 90%;
+    }
+}
 
 /*Contacts Section */
 
@@ -291,4 +379,48 @@ nav li:hover{
 
 .follow-me a:hover{
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px){
+    footer .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .contacts{
+        width: 90%;
+    }
+
+    .form{
+        border-left: none;
+        border-top: 1px solid rgba(128, 128, 128, 0.205);
+        margin-top: 20px;
+        padding-left: 0;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .contacts p{
+        font-size: 0.8rem;
+        margin: 1px 0;
+    }
+    
+    .info{
+        display: inline-block;
+    }
+
+    br{
+        display: none;
+    }
+
+    .follow-me{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .follow-me img{
+        width: 15px;
+        height: 15px;
+    }
 }
