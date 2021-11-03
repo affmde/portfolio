@@ -141,6 +141,26 @@ nav li:hover{
     transition: all linear 600ms;
 }
 
+/*quote secton*/
+
+.quote{
+    height: 300px;
+    background: rgba(211, 211, 211, 0.377);
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 6;
+}
+
+#quote-p{
+    grid-area: 3/2/3/10;
+}
+#quoter{
+    grid-area: 4/6/4/7;
+}
+
+
 /*About Me section*/
 
 
@@ -218,7 +238,57 @@ nav li:hover{
     font-size: 1.5rem;
 }
 
+.box:hover{
+    transform: scale(1.1);
+}
+
 .projects-container img{
     width: 100%;
     margin-top: 5px;
+}
+
+
+/*Contacts Section */
+
+.contacts{
+    width: 30%;
+}
+.contacts p{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.info{
+    font-weight: bold;
+}
+
+.form{
+    width: 60%;
+    border-left: 1px solid rgba(128, 128, 128, 0.205);
+    padding-left: 100px;
+}
+
+#textarea{
+    width: 100%;
+    height: 200px;
+}
+
+#username, #email{
+    width:50%;
+    margin: 5px 0;
+}
+
+#contact-me{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.follow-me{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.follow-me a:hover{
+    transform: scale(1.1);
 }
