@@ -340,7 +340,9 @@ nav li:hover{
 /*Contacts Section */
 
 .contacts{
-    width: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .contacts p{
     margin-top: 10px;
@@ -351,11 +353,6 @@ nav li:hover{
     font-weight: bold;
 }
 
-.form{
-    width: 60%;
-    border-left: 1px solid rgba(128, 128, 128, 0.205);
-    padding-left: 100px;
-}
 
 #textarea{
     width: 100%;
@@ -391,16 +388,9 @@ nav li:hover{
 
     .contacts{
         width: 90%;
+        flex-wrap: wrap;
     }
 
-    .form{
-        border-left: none;
-        border-top: 1px solid rgba(128, 128, 128, 0.205);
-        margin-top: 20px;
-        padding-left: 0;
-        width: 90%;
-        margin-bottom: 10px;
-    }
 
     .contacts p{
         font-size: 0.8rem;
