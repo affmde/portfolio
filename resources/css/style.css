@@ -298,6 +298,7 @@ nav li:hover{
 #my-projects{
     text-align: center;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .project-boxes-div{
@@ -423,4 +424,13 @@ nav li:hover{
         width: 15px;
         height: 15px;
     }
+}
+
+
+.website-type{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #f3f3f3d7;
+    box-shadow: 10px 10px 10px 10px black;
+    cursor: pointer;
 }
